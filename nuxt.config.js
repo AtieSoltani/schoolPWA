@@ -72,14 +72,15 @@ export default {
     theme: {
       dark: false,
       themes: {
-        dark: {
-          primary: colors.blue.darken2,
+        light: {
+          color_primary: "#6babfb",
           accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
+          color_secondary: "#fbbb6b",
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
+          success: colors.green.accent3,
+          app:"rgba(25,32,72)"
         }
       }
     }
