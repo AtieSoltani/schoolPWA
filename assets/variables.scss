@@ -1,4 +1,34 @@
-// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
-//
-// The variables you want to modify
-// $font-size-root: 20px;
+$color-primary: #23e0fc;
+$color-secondary: #ccc;
+$color-white: #fff;
+$color-danger: #ee0202;
+$color-warning: #ffc107;
+
+
+
+@font-face {
+  font-family: "IRANYekanRegularRd";
+  src: url("assets/style/fonts/IRANYekanRegularRd.ttf") format("ttf");
+}
+@font-face {
+  font-family: "IRANYekanRd";
+  src: url('~/assets/style/fonts/iranyekan.ttf');
+}
+
+@font-face {
+  font-family: "yekanbakh-regular";
+  src: url('~/assets/style/fonts/yekanbakh-regular.woff');
+}
+
+* {
+  direction: rtl;
+  font-family: "yekanbakh-regular", serif;
+  font-size: 14px;
+}
+
+
+@mixin fixedPosition {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
