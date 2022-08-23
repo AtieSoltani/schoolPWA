@@ -80,7 +80,7 @@ export default {
   data: () => ({
     barSimpleLinks: [
       {title: 'صفحه اصلی', route: '/'},
-      {title: 'گالری تصاویر', route: '/'},
+      {title: 'گالری تصاویر', route: '/gallery'},
       {title: 'المپیاد و پژوهش', route: '/'},
       {title: 'مشاوره', route: '/'},
       {title: 'افتخارات', route: '/'},
