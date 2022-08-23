@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.service-card{
+.service-card {
   background-image: url("assets/Images/Home/Services/back.png");
   min-height: 250px;
   background-attachment: fixed;
@@ -42,7 +42,7 @@ export default {
   background-size: cover;
   border-radius: 20px;
 
-  &-text{
+  &-text {
     font-size: 16px;
     color: white;
   }
