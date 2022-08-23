@@ -81,7 +81,7 @@ export default {
     barSimpleLinks: [
       {title: 'صفحه اصلی', route: '/'},
       {title: 'گالری تصاویر', route: '/gallery'},
-      {title: 'المپیاد و پژوهش', route: '/'},
+      {title: 'المپیاد و پژوهش', route: '/olympiad-research'},
       {title: 'مشاوره', route: '/'},
       {title: 'افتخارات', route: '/'},
     ],
