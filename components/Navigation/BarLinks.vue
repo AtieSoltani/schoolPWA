@@ -2,6 +2,7 @@
   <div class="d-none d-sm-block">
     <v-btn v-for="(link, i) in barSimpleLinks" :key="i"
            nuxt :to="link.route"
+           class="font-weight-bold"
            plain>
       {{ link.title }}
     </v-btn>
@@ -15,7 +16,39 @@
           text
           v-bind="attrs"
           v-on="on"
-        >
+          class="font-weight-bold">
+          اخبار
+          <v-icon class="mr-1" size="small">mdi-chevron-down</v-icon>
+        </v-btn>
+      </template>
+
+      <v-list>
+        <v-list-item
+          v-for="(NewsItem, index) in newsDropdown"
+          :key="index"
+          class="font-weight-bold">
+          <v-list-item-title>
+            <v-btn nuxt :to="NewsItem.route"
+                   class="font-weight-bold"
+                   plain>
+              {{ NewsItem.title }}
+            </v-btn>
+          </v-list-item-title>
+
+        </v-list-item>
+      </v-list>
+    </v-menu>
+
+    <v-menu
+      open-on-hover
+      offset-y
+    >
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          text
+          v-bind="attrs"
+          v-on="on"
+          class="font-weight-bold">
           درباره ما
           <v-icon class="mr-1" size="small">mdi-chevron-down</v-icon>
         </v-btn>
@@ -23,13 +56,20 @@
 
       <v-list>
         <v-list-item
-          v-for="(item, index) in items"
+          v-for="(UsItem, index) in usDropdown"
           :key="index"
         >
-          <v-list-item-title>{{ item.title }}</v-list-item-title>
+          <v-list-item-title>
+            <v-btn nuxt :to="UsItem.route"
+                   class="font-weight-bold"
+                   plain>
+              {{ UsItem.title }}
+            </v-btn>
+          </v-list-item-title>
         </v-list-item>
       </v-list>
     </v-menu>
+
 
   </div>
 </template>
@@ -45,11 +85,18 @@ export default {
       {title: 'مشاوره', route: '/'},
       {title: 'افتخارات', route: '/'},
     ],
-    items: [
-      { title: 'Click Me' },
-      { title: 'Click Me' },
-      { title: 'Click Me' },
-      { title: 'Click Me 2' },
+    usDropdown: [
+      {title: 'تماس با ما', route: ""},
+      {title: 'تاریخچه مدرسه آینده', route: ""},
+      {title: 'همکاران ما', route: ""},
+    ],
+
+    newsDropdown: [
+      {title: 'آرشیو خبرها', route: ""},
+      {title: 'اطلاعیه ها', route: ""},
+      {title: 'پربازدید ترین اخبار', route: ""},
+      {title: 'رویداد ها', route: ""},
+
     ],
   }),
 }

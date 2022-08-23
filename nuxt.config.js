@@ -56,8 +56,8 @@ export default {
       name:'اخبار آینده',
       short_name:'آینده',
       lang: 'fa',
-      theme_color:'#23e0fc',
-      background_color:'#E4F6FA',
+      theme_color:'#6babfb',
+      background_color:'#e7f1ff',
       icon:{
         filename:'icon.png',
         sizes:[64, 120, 144, 152, 192, 384, 512]
@@ -74,6 +74,7 @@ export default {
       themes: {
         light: {
           color_primary: "#6babfb",
+          color_light_primary: "#e7f1ff",
           accent: colors.grey.darken3,
           color_secondary: "#fbbb6b",
           info: colors.teal.lighten1,
