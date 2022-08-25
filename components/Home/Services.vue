@@ -1,6 +1,5 @@
 <template>
-  <div class="service-card ma-8 pt-5 px-3
-   d-sm-flex justify-space-around">
+  <div class="service-card ma-8 pt-5 px-3 d-sm-flex justify-space-around">
 
     <div class="d-flex flex-column align-center">
       <nuxt-link to="">
@@ -10,7 +9,7 @@
     </div>
 
     <div class="d-flex flex-column align-center">
-      <nuxt-link to="">
+      <nuxt-link to="/consultation">
         <img src="@/assets/Images/Home/Services/moshavere.png">
       </nuxt-link>
       <p class="service-card-text font-weight-bold">واحد مشاوره و بهداشت</p>

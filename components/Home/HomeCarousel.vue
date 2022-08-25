@@ -1,7 +1,6 @@
 <template>
   <div class="py-8">
-    <v-carousel v-model="model"
-                hide-delimiters
+    <v-carousel hide-delimiters
                 show-arrows-on-hover>
       <v-carousel-item
         reverse-transition="fade-transition"
