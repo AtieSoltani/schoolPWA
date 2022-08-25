@@ -83,16 +83,17 @@ export default {
       {title: 'گالری تصاویر', route: '/gallery'},
       {title: 'المپیاد و پژوهش', route: '/olympiad-research'},
       {title: 'مشاوره', route: '/consultation'},
-      {title: 'افتخارات', route: '/'},
+      {title: 'افتخارات', route: '/error'},
     ],
     usDropdown: [
       {title: 'تماس با ما', route: ""},
+      {title: 'اهداف و چشم انداز مدرسه', route: ""},
       {title: 'تاریخچه مدرسه آینده', route: ""},
       {title: 'همکاران ما', route: ""},
     ],
 
     newsDropdown: [
-      {title: 'آرشیو خبرها', route: ""},
+      {title: 'آرشیو خبرها', route: "/news-archive"},
       {title: 'اطلاعیه ها', route: ""},
       {title: 'پربازدید ترین اخبار', route: ""},
       {title: 'رویداد ها', route: ""},
