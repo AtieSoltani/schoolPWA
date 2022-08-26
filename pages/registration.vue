@@ -1,7 +1,7 @@
 <template>
   <div class="mt-16">
     <div class="mt-16">
-      <p>فرم ثبت نام آنلاین</p>
+      <p class="font-weight-bold px-4 pt-4 color_primary--text text-decoration-underline">فرم ثبت نام آنلاین</p>
 
       <v-form
         class="pa-4 d-sm-flex"

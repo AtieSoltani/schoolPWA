@@ -14,7 +14,7 @@
               پیش ثبت نام آنلاین سال تحصیلی 1401-1402
             </div>
             <br>
-            <v-btn nuxt to=""
+            <v-btn nuxt to="/registration"
                    color="color_primary"
                    large
                    class="font-weight-bold">
