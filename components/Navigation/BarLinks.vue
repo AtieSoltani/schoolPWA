@@ -97,7 +97,6 @@ export default {
       {title: 'اطلاعیه ها', route: ""},
       {title: 'پربازدید ترین اخبار', route: ""},
       {title: 'رویداد ها', route: ""},
-
     ],
   }),
 }

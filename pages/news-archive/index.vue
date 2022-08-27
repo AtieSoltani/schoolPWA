@@ -26,7 +26,7 @@
             ></v-img>
 
             <div>
-              <v-btn nuxt to=""
+              <v-btn nuxt to="/news-archive/1"
                      color="color_primary"
                      class="font-weight-bold"
                      text>
@@ -198,7 +198,7 @@ export default {
 
 <style scoped>
 .news {
-  background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url("assets/Images/NewsArchive/onAir.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url("../../assets/Images/NewsArchive/onAir.jpg");
   min-height: 250px;
   background-attachment: fixed;
   background-position: center;

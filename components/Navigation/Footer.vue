@@ -78,7 +78,7 @@ export default {
       {title: 'گالری تصاویر', route: '/gallery'},
       {title: 'المپیاد و پژوهش', route: '/olympiad-research'},
       {title: 'مشاوره', route: '/consultation'},
-      {title: 'افتخارات', route: '/'},
+      {title: 'افتخارات', route: '/error'},
     ],
   }),
 }

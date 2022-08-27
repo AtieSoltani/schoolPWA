@@ -14,7 +14,7 @@
         ></v-img>
       </template>
 
-      <navigation-drawer/>
+      <v-app-bar-nav-icon class="d-sm-none" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-app-bar-title class="font-weight-black">
         <span class="bar-title">مدرسه آینده</span>
@@ -28,8 +28,10 @@
 
       <template v-slot:extension>
         <BarLinks/>
-        </template>
+      </template>
     </v-app-bar>
+
+    <navigation-drawer v-if="drawer"/>
   </div>
 
 </template>
@@ -37,6 +39,7 @@
 <script>
 import NavigationDrawer from "~/components/Navigation/NavigationDrawer";
 import BarLinks from "~/components/Navigation/BarLinks";
+
 export default {
   name: "AppBar",
   components: {
@@ -44,13 +47,15 @@ export default {
     BarLinks
   },
   data() {
-    return {}
+    return {
+      drawer:false
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.bar-title{
+.bar-title {
   font-size: 20px !important;
 
 }
