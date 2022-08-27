@@ -153,9 +153,6 @@ export default {
   name: "registration",
   layout: 'user',
   data: () => ({
-    items: ['foo', 'bar', 'fizz', 'buzz'],
-    values: ['foo', 'bar'],
-    value: null,
     valid: true,
     name: '',
     nameRules: [
@@ -176,25 +173,19 @@ export default {
     phoneRules: [
       v => !!v || 'وارد کردن شماره تلفن ثابت الزامی است ',
       v => (v && v.length === 8) || 'اعداد شماره تلفن باید برابر با 8 باشد - ',
-
     ],
     mobile: '',
     mobileRules: [
       v => !!v || 'وارد کردن شماره تلفن همراه الزامی است ',
-      v => (v && v.length === 8) || 'شماره تلفن همراه باید 11 رقم باشد - ',
+      v => (v && v.length === 11) || 'شماره تلفن همراه باید 11 رقم باشد - ',
 
     ],
     id:'',
     idRules:[
       v => !!v || 'وارد کردن شماره شناسنامه الزامی است ',
-      v => (v && v.length === 8) || 'شماره شناسنامه باید 10 رقم باشد - ',
+      v => (v && v.length === 10) || 'شماره شناسنامه باید 10 رقم باشد - ',
     ],
 
-    email: '',
-    emailRules: [
-      v => !!v || 'E-mail is required',
-      v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
-    ],
     city:'',
     grade:'',
     major:'',
