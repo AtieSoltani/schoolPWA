@@ -1,6 +1,5 @@
 <template>
  <div>
-   <v-app-bar-nav-icon class="d-sm-none" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
    <v-navigation-drawer
      v-model="drawer"
@@ -14,23 +13,22 @@
      >
        <v-list-item-group
          v-model="group"
-         active-class="deep-purple--text text--accent-4"
-       >
-         <v-list-item>
-           <v-list-item-title>Foo</v-list-item-title>
+         active-class="deep-purple--text text--accent-4">
+
+
+         <v-list-item
+           v-for="(link, index) in barSimpleLinks"
+           :key="index"
+         >
+           <v-list-item-title>
+             <v-btn nuxt :to="link.route"
+                    class="font-weight-bold"
+                    plain>
+               {{ link.title }}
+             </v-btn>
+           </v-list-item-title>
          </v-list-item>
 
-         <v-list-item>
-           <v-list-item-title>Bar</v-list-item-title>
-         </v-list-item>
-
-         <v-list-item>
-           <v-list-item-title>Fizz</v-list-item-title>
-         </v-list-item>
-
-         <v-list-item>
-           <v-list-item-title>Buzz</v-list-item-title>
-         </v-list-item>
        </v-list-item-group>
      </v-list>
    </v-navigation-drawer>
@@ -41,8 +39,24 @@
 export default {
   name: "NavigationDrawer",
   data: () => ({
-    drawer: false,
+    drawer: true,
     group: null,
+    barSimpleLinks: [
+      {title: 'صفحه اصلی', route: '/'},
+      {title: 'گالری تصاویر', route: '/gallery'},
+      {title: 'المپیاد و پژوهش', route: '/olympiad-research'},
+      {title: 'مشاوره', route: '/consultation'},
+      {title: 'افتخارات', route: '/error'},
+      {title: 'تماس با ما', route: ""},
+      {title: 'اهداف و چشم انداز مدرسه', route: ""},
+      {title: 'تاریخچه مدرسه آینده', route: ""},
+      {title: 'همکاران ما', route: ""},
+      {title: 'آرشیو خبرها', route: "/news-archive"},
+      {title: 'اطلاعیه ها', route: ""},
+      {title: 'پربازدید ترین اخبار', route: ""},
+      {title: 'رویداد ها', route: ""},
+
+    ],
   }),
 
   watch: {
